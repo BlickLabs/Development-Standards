@@ -45,18 +45,21 @@ Talking about **git** we will work considering the next rules:
 
 * We encourage to follow the next branching convention.
   * Core: In case you're modifying something related with the core of the application, kinda critical and implies a test.
+  
   > core/NumberOfIssue-InWhatIAmWorkingOn-whoIsworking
 
   e.g:
   > core/12-RefactoringLoginProcess-jresendiz
 
   * feature: Related with a user store or feature. A description must appear on the github issue, implies tests.
+  
   > feature/NumberOfIssue-WhichUserStorieOrFeature-whoIsworking
 
   e.g:
   > feature/3-AdminCanLinkFacebookAccount-jresendiz
 
   * bugfix: When there's a bug or unexpected behavior that must be changed. Sometimes implies a test, depends on the bug.
+  
   > bugfix/NumberOfIssue-WhatIsTheBugAbout-whoIsworking
 
   e.g:
