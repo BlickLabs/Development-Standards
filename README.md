@@ -5,6 +5,7 @@
 * [General conventions](#general-conventions)
 * [Git conventions](#git-conventions)
 * [Pull Requests and Reviews](#pull-requests)
+
 ----
 ###<a name="general-conventions"></a> General conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
@@ -22,6 +23,7 @@
 > *Last24: what I did on the last day, Next24: What I'm about to work on, HelpWanted: If you feel stuck on something and need help.*
 
 * Master and Development branches will never be touched, just via pull request.
+
 ----
 
 ###<a name="git-conventions"></a> Git conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
