@@ -74,4 +74,4 @@ You can post your doubts on a pull request if needed or in the issue related in 
 
 #### Project Zero Exceptions
 
-For project Level Zero in Blick Scale you generate PR directly in `master` because not is necesary
+For project Level Zero in Blick Scale you generate PR directly in `master` because is not necesary
