@@ -45,21 +45,21 @@ Talking about **git** we will work considering the next rules:
 
 * We encourage to follow the next branching convention.
   * Core: In case you're modifying something related with the core of the application, kinda critical and implies a test.
-  
+
   > core/NumberOfIssue-InWhatIAmWorkingOn-whoIsworking
 
   e.g:
   > core/12-RefactoringLoginProcess-jresendiz
 
   * feature: Related with a user store or feature. A description must appear on the github issue, implies tests.
-  
+
   > feature/NumberOfIssue-WhichUserStorieOrFeature-whoIsworking
 
   e.g:
   > feature/3-AdminCanLinkFacebookAccount-jresendiz
 
   * bugfix: When there's a bug or unexpected behavior that must be changed. Sometimes implies a test, depends on the bug.
-  
+
   > bugfix/NumberOfIssue-WhatIsTheBugAbout-whoIsworking
 
   e.g:
@@ -71,3 +71,7 @@ Talking about **git** we will work considering the next rules:
 When there's a pull request, feel free to ask whatever you feel doubtful about. It's important to improve our code quality and a way to proceed it's having code reviews before and during the pull request. Ask to your partner for a review.
 
 You can post your doubts on a pull request if needed or in the issue related in github.
+
+#### Project Zero Exceptions
+
+For project Level Zero in Blick Scale you generate PR directly in `master` because is not necesary
