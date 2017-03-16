@@ -1,4 +1,4 @@
-# Deliver Protocol
+# Delivery Protocol
 
 For basic proyects `Level Zero` in blick scale consider deliver:
 
