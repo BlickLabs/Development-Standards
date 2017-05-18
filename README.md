@@ -1,13 +1,15 @@
 # Development-Standards
 
-##<a name="index"></a> Index
+## <a name="index"></a> Index
 
 * [General conventions](#general-conventions)
 * [Git conventions](#git-conventions)
 * [Pull Requests and Reviews](#pull-requests)
+* [Repositories and pro-tips](#create-repositories)
+* [Project Types](#project-types)
 
 ----
-###<a name="general-conventions"></a> General conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
+### <a name="general-conventions"></a> General conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
 * Test before code.
 
@@ -26,7 +28,7 @@
 
 ----
 
-###<a name="git-conventions"></a> Git conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
+### <a name="git-conventions"></a> Git conventions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
 One of the most important things inside a project development are the conventions.
 Any convention given, should be followed by any member of the team to improve the
@@ -47,31 +49,42 @@ Talking about **git** we will work considering the next rules:
   * Core: In case you're modifying something related with the core of the application, kinda critical and implies a test.
 
   > core/NumberOfIssue-InWhatIAmWorkingOn-whoIsworking
-
-  e.g:
   > core/12-RefactoringLoginProcess-jresendiz
 
   * feature: Related with a user store or feature. A description must appear on the github issue, implies tests.
 
   > feature/NumberOfIssue-WhichUserStorieOrFeature-whoIsworking
-
-  e.g:
   > feature/3-AdminCanLinkFacebookAccount-jresendiz
 
   * bugfix: When there's a bug or unexpected behavior that must be changed. Sometimes implies a test, depends on the bug.
 
   > bugfix/NumberOfIssue-WhatIsTheBugAbout-whoIsworking
-
-  e.g:
   > bugfix/3-AdminCantLoginAfterFacebookAccountWasLinked-jresendiz
 
 ----
-###<a name="pull-requests"></a> Pull Requests and Reviews.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
+### <a name="pull-requests"></a> Pull Requests and Reviews.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
 When there's a pull request, feel free to ask whatever you feel doubtful about. It's important to improve our code quality and a way to proceed it's having code reviews before and during the pull request. Ask to your partner for a review.
 
 You can post your doubts on a pull request if needed or in the issue related in github.
 
-#### Project Zero Exceptions
+### <a name="create-repositories"></a> Repositories and tips.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
-For project Level Zero in Blick Scale you generate PR directly in `master` because is not necesary
+Don't forget to add a user called `development-blick` to your repository, is the one that handles Jenkins and the automatic deployment process (It's a work in progress right know).
+
+If you need a repository (public or private), feel free to ask to **Enrique López** or **Alberto Reséndiz**, they can help you with that.
+
+
+### <a name="project-types"></a> Project Zero Exceptions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
+
+* Project Zero
+
+The ones that are just static files (maybe a simple admin with django-admin or keystonejs). You can create pull request directly to master, *don't remember that the code reviews will improve the team's code!*.
+
+* Project One
+
+Shopify Stores. The same case that Project Zero, in case there's something versioned on git. Reach **Enrique** or **Alan** for further information.
+
+* Project Two
+
+Mainly platforms and huge websites with a lot of logic and tests (ones including logic, keys, servers, etc, etc.) This kind of project will follow the conventions mentioned. 
