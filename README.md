@@ -78,7 +78,9 @@ If you need a repository (public or private), feel free to ask to **Enrique Lóp
 ### <a name="project-types"></a> Project Zero Exceptions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
 * Project Zero
+
 All PR's reviews to **Enrique**
+
 The ones that are just static files (maybe a simple admin with django-admin or keystonejs). You can create pull request directly to master, *don't remember that the code reviews will improve the team's code!*.
 
 * Project One
