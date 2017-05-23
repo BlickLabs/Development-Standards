@@ -46,19 +46,19 @@ Talking about **git** we will work considering the next rules:
 > _In case you're working on front-end and a lot of resources like images, fonts, etc. we will understand. Otherwise, the team must evaluate if the PR can be accepted._
 
 * We encourage to follow the next branching convention.
-  * Core: In case you're modifying something related with the core of the application, kinda critical and implies a test.
+  * _**Core**_: In case you're modifying something related with the core of the application, kinda critical and implies a test.
 
   > core/NumberOfIssue-InWhatIAmWorkingOn-whoIsworking
   
   > core/12-RefactoringLoginProcess-jresendiz
 
-  * feature: Related with a user store or feature. A description must appear on the github issue, implies tests.
+  * _**Feature**_: Related with a user store or feature. A description must appear on the github issue, implies tests.
 
   > feature/NumberOfIssue-WhichUserStorieOrFeature-whoIsworking
   
   > feature/3-AdminCanLinkFacebookAccount-jresendiz
 
-  * bugfix: When there's a bug or unexpected behavior that must be changed. Sometimes implies a test, depends on the bug.
+  * _**Bugfix**_: When there's a bug or unexpected behavior that must be changed. Sometimes implies a test, depends on the bug.
 
   > bugfix/NumberOfIssue-WhatIsTheBugAbout-whoIsworking
   
