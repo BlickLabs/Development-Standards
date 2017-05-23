@@ -78,7 +78,7 @@ If you need a repository (public or private), feel free to ask to **Enrique Lóp
 ### <a name="project-types"></a> Project Zero Exceptions.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
 * Project Zero
-
+All PR's reviews to **Enrique**
 The ones that are just static files (maybe a simple admin with django-admin or keystonejs). You can create pull request directly to master, *don't remember that the code reviews will improve the team's code!*.
 
 * Project One
@@ -88,3 +88,5 @@ Shopify Stores. The same case that Project Zero, in case there's something versi
 * Project Two
 
 Mainly platforms and huge websites with a lot of logic and tests (ones including logic, keys, servers, etc, etc.) This kind of project will follow the conventions mentioned. 
+
+The PR are assigned by EnriqueLC
