@@ -91,4 +91,4 @@ Shopify Stores. The same case that Project Zero, in case there's something versi
 
 Mainly platforms and huge websites with a lot of logic and tests (ones including logic, keys, servers, etc, etc.) This kind of project will follow the conventions mentioned. 
 
-The PR are assigned by EnriqueLC
+The PR reviewers will be assigned by Enrique
