@@ -63,6 +63,12 @@ Talking about **git** we will work considering the next rules:
   > bugfix/NumberOfIssue-WhatIsTheBugAbout-whoIsworking
   
   > bugfix/3-AdminCantLoginAfterFacebookAccountWasLinked-jresendiz
+  
+  * _**Views**_: Only add the adapt views accord with design showed in zeplin tool
+
+  > views/NumberOfIssue-WhatIsTheViewAbout-whoIsworking
+  
+  > views/3-ModalforTattoos-enriquelc
 
 ----
 ### <a name="pull-requests"></a> Pull Requests and Reviews.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
