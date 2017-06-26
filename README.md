@@ -86,15 +86,20 @@ If you need a repository (public or private), feel free to ask to **Enrique Lóp
 
 ### <a name="project-types"></a> Project Types and Policies.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
-* Project Zero
+* Project Zero (A)
 
-The ones that are just static files (maybe a simple admin with django-admin or keystonejs). You can create pull request directly to master, *don't remember that the code reviews will improve the team's code!*.
+The ones that are just static files. You can create pull request directly to master, *don't remember that the code reviews will improve the team's code!*.
+
+* Project Zero (B)
+
+Same as type (A) but with more views and includes a blog (maybe a simple admin with django-admin or keystonejs).
+
 
 All PR's reviews to **Enrique**
 
 * Project One
 
-Shopify Stores. The same case that Project Zero, in case there's something versioned on git. Reach **Enrique** or **Alan** for further information.
+Shopify Stores. The same case that Project Zero, in case there's something versioned on git. Reach **Enrique** or **Salvador** for further information.
 
 * Project Two
 
