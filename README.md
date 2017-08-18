@@ -70,6 +70,12 @@ Talking about **git** we will work considering the next rules:
   
   > views/3-ModalforTattoos-enriquelc
 
+  * _**Migration**_: When there are changes in a database deployed, like insertions, updates and alters.
+
+  > migration/NumberOfIssue_WhatItChangeTheMigration_whoIsworking
+  
+  > migration/137_Add_migration_for_add_new_users_jarodriguez80
+
 ----
 ### <a name="pull-requests"></a> Pull Requests and Reviews.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
