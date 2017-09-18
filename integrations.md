@@ -100,6 +100,7 @@ export FINACERO_MAILGUN_RECIPIENT="info@finacero.mx"
 ```
 # Paso 13
 Reiniciamos nginx `sudo service nginx restart`
+Reiniciamos integrations `sudo service integrations restart`
 
 # Paso 14
 Verificar que la url este activa en `integrations.blick.mx/<url dada de alta>`
