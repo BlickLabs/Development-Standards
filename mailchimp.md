@@ -91,9 +91,9 @@ Colocarse en la ubicación del repositorio `cd`, hacer un `cd integrations` y ja
 Hacemos un `cd` y accedemos a `cd deploy` y abrimos con el editor de textos favorito (vim, vi o nano) el archivo deploy y agregamos las variables necesarias dependiendo del proyecto
 
 ```
-export HIGIA_MAILCHIMP_API_KEY="ab46b8b8dcce21a2c8083908fb8226b4"
-export HIGIA_MAILCHIMP_SHARD="us1"
-export HIGIA_MAILCHIMP_LIST_ID="c500d4efe7"
+export HIGIA_MAILCHIMP_API_KEY="API_KEY"
+export HIGIA_MAILCHIMP_SHARD="SHARD"
+export HIGIA_MAILCHIMP_LIST_ID="LISTID"
 ```
 
 # Paso 14
