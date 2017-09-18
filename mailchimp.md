@@ -106,4 +106,20 @@ Reiniciamos integrations `sudo service integrations restart`
 # Paso 15
 Verificar que la url este activa en `integrations.blick.mx/<url dada de alta>`
 
+# Paso 16 (PARA FRONT)
+Considerar que el registro en mailchimp no regresa un `1` o un `0` regresa algo como esto:
 
+Cuando se registra la primera ocasión
+```
+...
+"status": "subscribed"
+...
+```
+Cuando ya existe el correo
+
+```
+...
+status:400,
+title:"Member Exists"
+...
+```
