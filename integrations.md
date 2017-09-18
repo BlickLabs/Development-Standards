@@ -37,7 +37,7 @@ Where:
 
 **name** es el nombre de la url
 
-# Paso 5
+# Paso 5 (ver Generar un template desde cero)
 En la misma carpeta (integrations/apps/mailgun/) abrir el archivo `views.py` agregar un registro similar al siguiente:
 
 ```
@@ -105,8 +105,74 @@ Reiniciamos integrations `sudo service integrations restart`
 # Paso 14
 Verificar que la url este activa en `integrations.blick.mx/<url dada de alta>`
 
+# Generar un template desde cero
 
+En el paso 5 buscar una clase que tenga algo parecido a esto: 
 
+```
+class RERContactWithCompanyView(MailgunGenericContactView):
+    KEY = settings.MAILGUN_API_KEY
+    DOMAIN = settings.RER_MAILGUN_DOMAIN
+    RECIPIENT = settings.RER_MAILGUN_RECIPIENT
+    EMAIL_TEMPLATE = 'email/rer_contact.html'
+    FROM_TEXT = 'RER Energy Group'
+    SUBJECT = 'Nuevo contacto desde página web'
 
+    @method_decorator(csrf_exempt)
+    def dispatch(self, request, *args, **kwargs):
+        return super(RochaLanderoCarrerView, self) \
+            .dispatch(request, *args, **kwargs)
+
+    def post(self, request):
+        ctx = {
+            'name': request.POST.get('name'),
+            'email': request.POST.get('email'),
+            'phone': request.POST.get('phone'),
+            'birthday': request.POST.get('birthday'),
+            'master': request.POST.get('master'),
+            'languages': request.POST.get('languages'),
+        }
+
+        body = loader.render_to_string(self.EMAIL_TEMPLATE, ctx)
+
+        endpoint = 'https://api.mailgun.net/v3/{0}/messages'.format(self.DOMAIN)
+        response = requests.post(
+            endpoint, auth=('api', self.KEY), data={
+                'from': '{0} <postmaster@{1}>'.format(self.FROM_TEXT, self.DOMAIN),
+                'to': self.RECIPIENT,
+                'subject': self.SUBJECT,
+                'html': body
+            })
+
+        if response.status_code != 200:
+            value = '0'
+        else:
+            value = '1'
+
+        return HttpResponse(value)
+```
+# Paso 5.1
+
+Agregar los campos requeridos por el formulario
+
+```
+...
+ctx = {
+            'name': request.POST.get('name'),
+            'email': request.POST.get('email'),
+            'phone': request.POST.get('phone'),
+            'birthday': request.POST.get('birthday'),
+            'master': request.POST.get('master'),
+            'languages': request.POST.get('languages'),
+        }
+...
+```
+# Paso 5.2
+
+Agregar el template en la siguiente dirección: `/integrations/templates/email` con el mismo nombre que esta en el email_template
+
+# Paso 5.3
+
+Agregar en el `dispatch` el mismo nombre de la clase
 
 
