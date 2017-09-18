@@ -33,7 +33,7 @@ Where:
 
 **regex** es la expresión regular en donde se aplicará el filtro de la url
 
-**view** es la vista que se genera en el archivo de `views.py` (ver paso 5)[#paso5]
+**view** es la vista que se genera en el archivo de `views.py` (ver el siguiente paso)
 
 **name** es el nombre de la url
 
@@ -92,7 +92,7 @@ Loguearse como integrations `sudo su integrations`
 Colocarse en la ubicación del repositorio `cd`, hacer un `cd integrations` y jalar los cambios del repo `git pull origin master` ya que se aprobo el PR
 
 # Paso 12
-Hacemos un `cd` y accedemos a `cd deploy` y abrimos con el editor de textos favorito (vim, vi o nano) el archivo deploy y agregamos las variables necesarias
+Hacemos un `cd` y accedemos a `cd deploy` y abrimos con el editor de textos favorito (vim, vi o nano) el archivo deploy y agregamos las variables necesarias dependiendo del proyecto
 
 ```
 export FINACERO_MAILGUN_DOMAIN="mg.finacero.mx"
