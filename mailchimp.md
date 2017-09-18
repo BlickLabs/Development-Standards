@@ -49,8 +49,9 @@ Donde
 **WORKING_LABS_MAILCHIMP_LIST_ID** Es el id de la lista
 
 # Paso 7
-Ir a la carpeta de integrations/apps/mailchimp/ y abrir el archivo urls.py y agregar la siguientes líneas según nombre de proyecto dentro del arreglo de urlpatterns = [
+Ir a la carpeta de integrations/apps/mailchimp/ y abrir el archivo urls.py y agregar la siguientes líneas según nombre de proyecto dentro del arreglo de `urlpatterns = [`
 
+```
 urlpatterns = [
 ...
 
@@ -61,6 +62,8 @@ url(regex='^florelia/newsletter/$',
         
         
 ...]
+
+```
 
 # Paso 7
 En la misma carpeta (integrations/apps/mailchimp/) abrir el archivo views.py agregar un registro similar al siguiente:
