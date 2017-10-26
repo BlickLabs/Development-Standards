@@ -29,3 +29,7 @@ For [open graph protocol](http://ogp.me/) use this tags
 <meta name="twitter:site" content="@<Twitter Username>" />
 <meta name="twitter:creator" content="@<Twitter Username>" />
 ```
+
+
+FYI lets get the image from https://realfavicongenerator.net/social/#.WfIPW3VSxhE
+Because get the correct images from size, for iphone, ios, android etc.
